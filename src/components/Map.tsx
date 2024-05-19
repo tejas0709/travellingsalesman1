@@ -156,6 +156,7 @@ const Map: React.FC = () => {
           data: {
             type: 'Feature',
             geometry: smoothRoute,
+            properties: {}, // Add properties field here
           },
         });
         map.addLayer({
@@ -175,13 +176,16 @@ const Map: React.FC = () => {
       });
     }
   };
-
+  
   const getSmoothRoute = (coordinates: any[]) => {
     return {
-      type: 'LineString',
-      coordinates,
+      type: 'LineString' as const, // explicitly specifying 'LineString' type
+      coordinates: coordinates,
     };
   };
+  
+  
+
 
   const fetchLocation = async (lng: number, lat: number) => {
     try {
