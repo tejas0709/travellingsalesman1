@@ -6,7 +6,7 @@ import axios from 'axios';
 import { tsp } from '../utils/tsp';
 
 const Map = () => {
-  mapboxgl.accessToken = 'pk.eyJ1IjoibWFzaGJ1cm4iLCJhIjoiY2x3MnVlcWZmMGtpeTJxbzA5ZXNmb3V0MCJ9.E-W6jVgrBjtiZL-mUJhUAw';
+  mapboxgl.accessToken = 'pk.eyJ1IjoidGVqYXMwNzA5IiwiYSI6ImNtYXZndXUzbDA0YmEya215bnBoNWduZGQifQ.onAiJPjdHG5fYSwKASXVmw';
 
   const mapContainer = useRef<HTMLDivElement | null>(null);
   const map = useRef<mapboxgl.Map | null>(null);
