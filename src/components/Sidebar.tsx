@@ -43,7 +43,7 @@ const Sidebar: React.FC<SidebarProps> = ({ sendLocation, updateLocation, results
   useEffect(() => {
     const fetchSuggestions = async () => {
       try {
-        const response = await axios.get(`https://api.mapbox.com/search/geocode/v6/forward?q=${searchInput}&access_token=pk.eyJ1IjoibWFzaGJ1cm4iLCJhIjoiY2x3MnVlcWZmMGtpeTJxbzA5ZXNmb3V0MCJ9.E-W6jVgrBjtiZL-mUJhUAw`);
+        const response = await axios.get(`https://api.mapbox.com/search/geocode/v6/forward?q=${searchInput}&access_token=pk.eyJ1IjoidGVqYXMwNzA5IiwiYSI6ImNtYXZndXUzbDA0YmEya215bnBoNWduZGQifQ.onAiJPjdHG5fYSwKASXVmw`);
         setSuggestions(response.data.features);
       } catch (error) {
         console.error('Error fetching suggestions:', error);
